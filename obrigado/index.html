@@ -11,14 +11,14 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/style.css?v=2">
+<link rel="stylesheet" href="../assets/style.css?v=4">
 </head>
 <body>
 
 <header class="top pad">
   <div class="wrap">
     <a class="brand" href="../" aria-label="Health Influence Day, voltar para a página do encontro"><span class="dot"></span>Health Influence Day</a>
-    <div class="mono dim top-meta">04/11 · São Paulo</div>
+    <div class="mono dim top-meta">04/11 · <span class="hide-m">São Paulo</span><span class="show-m">SP</span></div>
     <a class="btn btn--sm btn--ghost" href="../">Voltar</a>
   </div>
 </header>
@@ -29,11 +29,11 @@
       <div class="stack">
         <div class="ty-check" aria-hidden="true"><svg viewBox="0 0 28 28"><path d="M5 14.5l6 6L23 8"/></svg></div>
         <div class="label mono muted"><span class="dot"></span>Solicitação recebida</div>
-        <h1 class="h">Recebemos seu interesse<span class="red">.</span></h1>
+        <h1 class="h" data-split>Recebemos seu interesse<span class="red">.</span></h1>
         <p class="lead">Sua solicitação para o Health Influence Day está com a nossa equipe. Em breve entramos em contato por e&#8209;mail e WhatsApp para dizer se você foi selecionado para o encontro.</p>
       </div>
       <div class="photo photo--hero ty-photo">
-        <img src="../img/hero-plateia.jpg" width="1000" height="1773" alt="Plateia vazia do auditório, vista do palco">
+        <img src="../img/hero-plateia.jpg" srcset="../img/hero-plateia-600.jpg 600w, ../img/hero-plateia.jpg 1000w" sizes="(max-width:900px) 100vw, 460px" width="1000" height="1773" alt="Plateia vazia do auditório, vista do palco">
         <div class="corner corner--tl"></div><div class="corner corner--tr"></div><div class="corner corner--bl"></div><div class="corner corner--br"></div>
         <div class="tag tag--br mono">04/11 · Hotmart</div>
       </div>
@@ -87,13 +87,14 @@
   <div class="wrap">
     <div class="brand brand--foot"><span class="dot"></span>Health Influence Day</div>
     <div class="logos">
-      <div><span class="mono dim" style="font-size:11px">Realização</span><img src="../img/scienceplay-branco.png" width="418" height="121" alt="Science Play"></div>
-      <div><span class="mono dim" style="font-size:11px">Local e apoio</span><img src="../img/hotmart-branco.png" width="520" height="202" alt="Hotmart" style="height:22px"></div>
+      <div><span class="mono dim foot-k">Realização</span><img src="../img/scienceplay-branco.png" width="418" height="121" alt="Science Play"></div>
+      <div><span class="mono dim foot-k">Local e apoio</span><img class="logo-foot-hotmart" src="../img/hotmart-branco.png" width="448" height="145" alt="Hotmart"></div>
     </div>
     <div class="mono dim">@brunnofalcao · SP · 2026</div>
   </div>
 </footer>
 
+<script src="../assets/motion.js?v=4" defer></script>
 <!-- Meta Pixel / GA4: cole os snippets no <head> e o evento abaixo marca a conversão -->
 <script>
   if (window.fbq) fbq('track', 'Lead');

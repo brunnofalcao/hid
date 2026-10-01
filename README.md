@@ -2,7 +2,11 @@
 
 Página estática pronta para GitHub Pages.
 
-## Publicar
+## Publicar (Vercel + GitHub)
+**Substitua o conteúdo inteiro do repositório** por esta pasta. Se subir só o `index.html`, o CSS antigo continua valendo.
+Para conferir se a versão nova está no ar: abra o site, `Ver código-fonte` e procure `style.css?v=4`.
+
+### Alternativa GitHub Pages
 1. Crie o repositório (ex.: `health-influence-day`) e suba TODO o conteúdo desta pasta na raiz: `index.html`, `obrigado/`, `assets/`, `img/`, `404.html`, `CNAME`.
 2. GitHub > Settings > Pages > Source: **Deploy from a branch** > `main` / `/ (root)`.
 3. Custom domain: `hid.scienceplay.com` (o arquivo CNAME já faz isso). Marque **Enforce HTTPS** quando liberar.
@@ -30,3 +34,8 @@ Embed oficial do RD Station (`formulario-aplicacao-hid-9331237108acf9518650`). C
 
 ## Pixel / GA (opcional)
 Cole o snippet do Meta Pixel e/ou GA4 dentro do `<head>`.
+
+## Compartilhamento social
+- Preview de link (WhatsApp, LinkedIn, Facebook, iMessage): `img/og.jpg` (1200x630), já configurada nas meta tags.
+- Se o WhatsApp mostrar a imagem antiga, cole o link no Facebook Sharing Debugger e clique em "Scrape again" para limpar o cache.
+- Peças para feed (1080x1350) e story (1080x1920) estão na pasta `hid-social/`, fora do site.

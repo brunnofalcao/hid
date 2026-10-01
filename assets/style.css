@@ -293,8 +293,10 @@ img{max-width:100%}
 /* ===== revelação ao rolar ===== */
 .js .r{opacity:0;transform:translate3d(0,22px,0);transition:opacity .9s cubic-bezier(.2,.75,.1,1) var(--d,0ms),transform .9s cubic-bezier(.2,.75,.1,1) var(--d,0ms)}
 .js .r.in{opacity:1;transform:none}
-.js .photo.r{opacity:1;transform:none;clip-path:inset(0 0 100% 0);transition:clip-path 1.2s cubic-bezier(.75,0,.15,1)}
-.js .photo.r.in{clip-path:inset(0 0 0 0)}
+/* o recorte fica na imagem, não no bloco observado: com clip-path no próprio bloco o navegador o considera invisível e a animação nunca dispara */
+.js .photo.r{opacity:1;transform:none}
+.js .photo.r>img{clip-path:inset(0 0 100% 0);transition:clip-path 1.2s cubic-bezier(.75,0,.15,1)}
+.js .photo.r.in>img{clip-path:inset(0 0 0 0)}
 /* linhas que se desenham */
 .row,.time{position:relative}
 .js .row.r,.js .time.r{border-top-color:transparent}
@@ -303,7 +305,7 @@ img{max-width:100%}
 
 @media (prefers-reduced-motion:reduce){
   .ticker-track,.tag--rec .dot,.hero .label .dot::after,.ty-hero .label .dot::after,.rd-loading::before{animation:none}
-  .js .r,.js .photo.r,.js .hero .stack>*,.js .ty-hero .stack>*,.js .photo--hero,.js .ty-photo,.js .photo .corner,.js .photo .tag,.js:not(.ready) .w>*{opacity:1 !important;transform:none !important;clip-path:none !important;transition:none !important}
+  .js .r,.js .photo.r>img,.js .hero .stack>*,.js .ty-hero .stack>*,.js .photo--hero,.js .ty-photo,.js .photo .corner,.js .photo .tag,.js:not(.ready) .w>*{opacity:1 !important;transform:none !important;clip-path:none !important;transition:none !important}
   .js .row.r::before,.js .time.r::before{transform:none;transition:none}
 }
-@media (min-width:761px) and (max-width:999px){.photo--hero{aspect-ratio:16/11}.photo--hero img{object-position:center 55%}}
+@media (min-width:761px) and (max-width:999px){.photo--hero{aspect-ratio:16/11}.photo--hero img{object-position:center 55%}}  

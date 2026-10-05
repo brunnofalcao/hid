@@ -28,6 +28,18 @@
 {"@context":"https://schema.org","@type":"Event","name":"Health Influence Day","description":"O encontro sobre autoridade, posicionamento e crescimento digital na saúde.","startDate":"2026-11-04T16:00:00-03:00","endDate":"2026-11-04T20:00:00-03:00","eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode","eventStatus":"https://schema.org/EventScheduled","location":{"@type":"Place","name":"Hotmart","address":{"@type":"PostalAddress","streetAddress":"Rua Girassol, 365","addressLocality":"São Paulo","addressRegion":"SP","addressCountry":"BR"}},"organizer":{"@type":"Organization","name":"Science Play","url":"https://scienceplay.com"},"performer":{"@type":"Person","name":"Brunno Falcão"},"image":"https://hid.scienceplay.com/img/og.jpg"}
 </script>
 <link rel="stylesheet" href="assets/style.css?v=4">
+<!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '460696430970324');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=460696430970324&ev=PageView&noscript=1"></noscript>
+<!-- Fim Meta Pixel -->
 </head>
 <body>
 
@@ -177,6 +189,17 @@
   </div>
 </footer>
 
+<script>
+/* Meta: marca quem chegou a ver o formulário (público de remarketing "viu e não enviou") */
+(function () {
+  var alvo = document.getElementById('convite');
+  if (!alvo || !('IntersectionObserver' in window) || !window.fbq) return;
+  var io = new IntersectionObserver(function (e) {
+    if (e[0].isIntersecting) { fbq('track', 'ViewContent', { content_name: 'Formulario de convite HID' }); io.disconnect(); }
+  }, { threshold: 0.4 });
+  io.observe(alvo);
+})();
+</script>
 <script src="assets/motion.js?v=4" defer></script>
 <script>
 /* Barra de CTA no mobile: aparece depois do hero e some quando o formulário está na tela */

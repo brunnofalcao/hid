@@ -308,4 +308,9 @@ img{max-width:100%}
   .js .r,.js .photo.r>img,.js .hero .stack>*,.js .ty-hero .stack>*,.js .photo--hero,.js .ty-photo,.js .photo .corner,.js .photo .tag,.js:not(.ready) .w>*{opacity:1 !important;transform:none !important;clip-path:none !important;transition:none !important}
   .js .row.r::before,.js .time.r::before{transform:none;transition:none}
 }
-@media (min-width:761px) and (max-width:999px){.photo--hero{aspect-ratio:16/11}.photo--hero img{object-position:center 55%}}  
+@media (min-width:761px) and (max-width:999px){.photo--hero{aspect-ratio:16/11}.photo--hero img{object-position:center 55%}}
+
+/* foto do hero: palestra no Nutrição Brasil (já tratada, sem escurecer) */
+.photo--palestra img{object-position:center 22%;filter:none}
+@media (min-width:761px) and (max-width:999px){.photo--palestra img{object-position:center 26%}}
+@media (max-width:760px){.photo--palestra img{object-position:center 16%}}

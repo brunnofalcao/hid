@@ -4,7 +4,7 @@ Página estática pronta para GitHub Pages.
 
 ## Publicar (Vercel + GitHub)
 **Substitua o conteúdo inteiro do repositório** por esta pasta. Se subir só o `index.html`, o CSS antigo continua valendo.
-Para conferir se a versão nova está no ar: abra o site, `Ver código-fonte` e procure `style.css?v=4`.
+Para conferir se a versão nova está no ar: abra o site, `Ver código-fonte` e procure `og-online.jpg` (versão da transmissão).
 
 ### Alternativa GitHub Pages
 1. Crie o repositório (ex.: `health-influence-day`) e suba TODO o conteúdo desta pasta na raiz: `index.html`, `obrigado/`, `assets/`, `img/`, `404.html`, `CNAME`.
@@ -21,9 +21,12 @@ Se usar Cloudflare, deixe a nuvem **cinza** (DNS only) até o GitHub emitir o ce
 ## Rotas
 | Página | Rota | Observação |
 |---|---|---|
-| Inscrição | `/` | Formulário RD embutido em `#convite` |
-| Obrigado | `/obrigado/` | `noindex`; dispara Lead (Meta) e generate_lead (GA4) se os pixels estiverem instalados |
-| Erro | `/404.html` | Servida automaticamente pelo GitHub Pages |
+| Transmissão ao vivo (online) | `/` | Formulário RD embutido em `#inscricao`; venda da gravação (Hotmart) |
+| Obrigado da transmissão | `/obrigado/` | `noindex`; dispara Lead (Meta); oferta da gravação |
+| Encontro presencial | `/presencial/` | Lista presencial encerrada; leva para a transmissão |
+| Checklist fundo preto | `/fundo-preto/` | Isca da palavra FUNDO |
+| Imagens dos e-mails | `/img/emails/` | Usadas pelos e-mails da campanha; não apagar |
+| Erro | `/404.html` | |
 
 ## Redirecionamento após envio (obrigatório)
 No RD Station, edite o formulário `formulario-aplicacao-hid` > Configurações > Ação após conversão > **Redirecionar para URL**:

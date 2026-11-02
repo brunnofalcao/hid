@@ -1,8 +1,46 @@
 {
   "cleanUrls": true,
   "trailingSlash": true,
+  "redirects": [
+    {
+      "source": "/grupo-premium",
+      "destination": "https://chat.whatsapp.com/GPosEcYgFQeC2TAdHkaDXL",
+      "permanent": false
+    },
+    {
+      "source": "/grupo-premium/",
+      "destination": "https://chat.whatsapp.com/GPosEcYgFQeC2TAdHkaDXL",
+      "permanent": false
+    },
+    {
+      "source": "/grupo-presencial",
+      "destination": "https://chat.whatsapp.com/HxqDOlemQlg8YBdxfL971R",
+      "permanent": false
+    },
+    {
+      "source": "/grupo-presencial/",
+      "destination": "https://chat.whatsapp.com/HxqDOlemQlg8YBdxfL971R",
+      "permanent": false
+    }
+  ],
   "headers": [
-    { "source": "/assets/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }] },
-    { "source": "/img/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=86400" }] }
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/img/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
+        }
+      ]
+    }
   ]
 }

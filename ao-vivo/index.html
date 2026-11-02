@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ao vivo · Health Influence Day · 04/11</title>
+<meta name="description" content="Transmissão ao vivo do Health Influence Day, direto da Hotmart. Quarta, 04/11. A sala abre às 16h15 e a programação começa às 16h30.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0A0F1A">
+<meta property="og:title" content="Health Influence Day · Ao vivo">
+<meta property="og:description" content="Quarta, 04/11. A sala abre às 16h15 e a programação começa às 16h30.">
+<meta property="og:image" content="https://hid.scienceplay.com/img/og-online.jpg?v=1">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230A0F1A'/%3E%3Ccircle cx='16' cy='16' r='7' fill='%23E5352B'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=4">
+<style>
+.live-top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 24px}
+.status{display:inline-flex;align-items:center;gap:10px;font-family:"Geist Mono",monospace;font-size:13px;letter-spacing:.14em;text-transform:uppercase;padding:11px 15px;border:1px solid rgba(241,239,234,.55);color:var(--paper)}
+.status.is-live{background:var(--red);border-color:var(--red);color:#fff}
+.status.is-live .dot{background:#fff;animation:blink 1.2s ease-in-out infinite}
+@keyframes blink{50%{opacity:.25}}
+@media (prefers-reduced-motion:reduce){.status.is-live .dot{animation:none}}
+.when{font-family:"Geist Mono",monospace;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.stage{display:grid;grid-template-columns:minmax(0,1fr) 380px;gap:16px;margin-top:20px}
+.player{position:relative;width:100%;aspect-ratio:16/9;background:#000;border:1px solid var(--line)}
+.player iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.chat{border:1px solid var(--line);background:#0E1320;min-height:420px}
+.chat iframe{width:100%;height:100%;min-height:420px;border:0;display:block}
+.chat-btn{display:none}
+@media (max-width:1000px){.stage{grid-template-columns:1fr}.chat{display:none}.chat-btn{display:inline-flex}}
+.no-chat .chat{display:none}.no-chat .stage{grid-template-columns:1fr}.no-chat .chat-btn{display:inline-flex}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:16px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:16px}
+.card2{border:1px solid var(--line);padding:clamp(20px,2.4vw,28px);display:flex;flex-direction:column;gap:10px;align-items:flex-start}
+.card2 .h{font-size:clamp(24px,2.2vw,30px);line-height:1}
+.card2 p{color:var(--muted);font-size:16px}
+.offer{display:none;border:1px solid var(--red);background:rgba(229,53,43,.08);padding:clamp(22px,3vw,40px);gap:14px;flex-direction:column;align-items:flex-start}
+.offer.on{display:flex}
+.offer .h{font-size:clamp(32px,4vw,56px);line-height:.95}
+.offer p{color:var(--paper);font-size:17px;max-width:60ch}
+.ended{display:none}
+.is-ended .stage,.is-ended .actions{display:none}
+.is-ended .ended{display:flex}
+.fine{font-size:12px;color:var(--dim)}
+</style>
+<!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '460696430970324');
+fbq('track', 'PageView');
+fbq('track', 'ViewContent', { content_name: 'Transmissao ao vivo HID' });
+</script>
+<noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=460696430970324&ev=PageView&noscript=1"></noscript>
+<!-- Fim Meta Pixel -->
+</head>
+<body>
+
+<header class="top pad">
+  <div class="wrap">
+    <a class="brand" href="../" aria-label="Health Influence Day"><span class="dot"></span>Health Influence Day</a>
+    <div class="mono dim top-meta hide-m">04/11 · Ao vivo</div>
+    <a class="btn btn--sm top-cta" id="yt-top" href="#" target="_blank" rel="noopener">Abrir no YouTube</a>
+  </div>
+</header>
+
+<main class="pad" id="page">
+  <div class="wrap">
+    <div class="live-top">
+      <span class="status" id="status"><span class="dot"></span><span id="status-txt">A sala abre às 16h15</span></span>
+      <span class="when">Quarta, 04/11 · sala às 16h15 · programação às 16h30 · horário de Brasília</span>
+    </div>
+
+    <div class="stage">
+      <div class="player"><iframe id="yt-player" title="Health Influence Day ao vivo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+      <div class="chat"><iframe id="yt-chat" title="Chat ao vivo"></iframe></div>
+    </div>
+
+    <div class="actions">
+      <a class="btn chat-btn" id="yt-chat-btn" href="#" target="_blank" rel="noopener"><span class="dot"></span>Participar do chat no YouTube</a>
+      <a class="btn btn--ghost" id="grupo-btn" href="#" target="_blank" rel="noopener" style="display:none"><span class="dot"></span>Entrar no grupo do online</a>
+    </div>
+
+    <div class="ended stack stack--sm" style="margin-top:20px">
+      <h1 class="h" style="font-size:clamp(40px,5vw,80px)">A transmissão terminou<span class="red">.</span></h1>
+      <p class="lead">Obrigado por assistir. A gravação completa, com acesso vitalício, está disponível abaixo.</p>
+    </div>
+  </div>
+
+  <div class="wrap stack stack--md" style="margin-top:40px">
+    <div class="offer" id="offer">
+      <div class="label mono"><span class="dot"></span>Palestre•se ELITE 2027 · Lote HID</div>
+      <div class="h">Da audiência à agenda<span class="red">.</span></div>
+      <p>3 dias de imersão, de 12 a 14/03/2027, em Alphaville, São Paulo. O preço de lançamento e os bônus do Lote HID valem até segunda, 16/11.</p>
+      <a class="btn" id="elite-btn" href="#" target="_blank" rel="noopener"><span class="dot"></span>Garantir minha vaga no ELITE</a>
+    </div>
+
+    <div class="cards">
+      <div class="card2">
+        <div class="mono dim">Para aproveitar</div>
+        <div class="h">Papel e caneta por perto<span class="red">.</span></div>
+        <p>Cada aula termina com algo para você fazer no dia seguinte. E participe pelo chat: escreva de onde você está assistindo.</p>
+      </div>
+      <div class="card2">
+        <div class="mono dim">Gravação completa</div>
+        <div class="h">Assista quando quiser<span class="red">.</span></div>
+        <p>A transmissão fica disponível só ao vivo. A gravação completa, com acesso vitalício, custa R$ 49,90 à vista ou 12x de R$ 5,16*.</p>
+        <a class="btn btn--ghost" href="https://pay.hotmart.com/X108210082W?off=s212oz87" target="_blank" rel="noopener"><span class="dot"></span>Quero a gravação</a>
+        <div class="fine">*Parcelado com juros, total de R$ 61,92.</div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="foot pad">
+  <div class="wrap">
+    <div class="brand brand--foot"><span class="dot"></span>Health Influence Day</div>
+    <div class="logos">
+      <div><span class="mono dim foot-k">Realização</span><img src="../img/scienceplay-branco.png" width="418" height="121" alt="Science Play"></div>
+      <div><span class="mono dim foot-k">Local e apoio</span><img class="logo-foot-hotmart" src="../img/hotmart-branco.png" width="448" height="145" alt="Hotmart"></div>
+    </div>
+    <div class="mono dim">@brunnofalcao · 2026</div>
+  </div>
+</footer>
+
+<script>
+/* ===== CONFIGURAÇÃO: só mexa aqui ===== */
+var VIDEO_ID  = 'X87Shx0yPBk';                 // ID da transmissão no YouTube
+var ELITE_URL = '';                            // link do checkout do ELITE (vazio = a oferta não aparece)
+var GRUPO_URL = '';                            // link do grupo do online (vazio = o botão não aparece)
+var ABRE      = '2026-11-04T16:15:00-03:00';   // a sala abre
+var COMECA    = '2026-11-04T16:30:00-03:00';   // a programação começa
+var OFERTA    = '2026-11-04T19:00:00-03:00';   // a oferta do ELITE aparece
+var FIM       = '2026-11-04T20:30:00-03:00';   // a página passa para "a transmissão terminou"
+/* ===================================== */
+(function () {
+  var watch = 'https://www.youtube.com/live/' + VIDEO_ID;
+  document.getElementById('yt-player').src = 'https://www.youtube.com/embed/' + VIDEO_ID + '?rel=0&playsinline=1';
+  document.getElementById('yt-top').href = watch;
+  document.getElementById('yt-chat-btn').href = watch;
+  var mobile = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+  if (mobile) { document.body.classList.add('no-chat'); }
+  else { document.getElementById('yt-chat').src = 'https://www.youtube.com/live_chat?v=' + VIDEO_ID + '&embed_domain=' + location.hostname; }
+  if (GRUPO_URL) { var g = document.getElementById('grupo-btn'); g.href = GRUPO_URL; g.style.display = ''; }
+  if (ELITE_URL) { document.getElementById('elite-btn').href = ELITE_URL; }
+
+  var st = document.getElementById('status'), tx = document.getElementById('status-txt'), offer = document.getElementById('offer');
+  var forced = new URLSearchParams(location.search).get('estado'); // teste: ?estado=antes | aovivo | oferta | fim
+  var viuOferta = false;
+  function tick() {
+    var now = Date.now(), t = function (d) { return new Date(d).getTime(); };
+    var fase = forced || (now >= t(FIM) ? 'fim' : now >= t(OFERTA) ? 'oferta' : now >= t(ABRE) ? 'aovivo' : 'antes');
+    document.body.classList.toggle('is-ended', fase === 'fim');
+    if (fase === 'antes') {
+      var s = Math.max(0, Math.floor((t(ABRE) - now) / 1000)), d = Math.floor(s / 86400), h = Math.floor(s % 86400 / 3600), m = Math.floor(s % 3600 / 60);
+      tx.textContent = 'A sala abre em ' + (d ? d + 'd ' : '') + h + 'h ' + m + 'min';
+      st.classList.remove('is-live');
+    } else if (fase === 'fim') {
+      tx.textContent = 'Transmissão encerrada'; st.classList.remove('is-live');
+    } else {
+      tx.textContent = now < t(COMECA) && !forced ? 'Ao vivo · a programação começa às 16h30' : 'Ao vivo agora'; st.classList.add('is-live');
+    }
+    var mostra = !!ELITE_URL && (fase === 'oferta' || fase === 'fim');
+    offer.classList.toggle('on', mostra);
+    if (mostra && !viuOferta && window.fbq) { fbq('trackCustom', 'ViuOfertaELITE'); viuOferta = true; }
+  }
+  tick(); setInterval(tick, 20000);
+  /* públicos para remarketing: quem ficou 10 e 60 minutos na transmissão */
+  setTimeout(function () { if (window.fbq) fbq('trackCustom', 'AssistiuHID10min'); }, 600000);
+  setTimeout(function () { if (window.fbq) fbq('trackCustom', 'AssistiuHID60min'); }, 3600000);
+  document.querySelectorAll('a[href^="https://pay.hotmart.com"]').forEach(function (a) {
+    a.addEventListener('click', function () { if (window.fbq) fbq('track', 'InitiateCheckout', { content_name: 'Gravacao HID', value: 49.90, currency: 'BRL' }); });
+  });
+  document.getElementById('elite-btn').addEventListener('click', function () { if (window.fbq) fbq('track', 'InitiateCheckout', { content_name: 'Palestrese ELITE 2027' }); });
+})();
+</script>
+<script src="../assets/motion.js?v=4" defer></script>
+</body>
+</html>
